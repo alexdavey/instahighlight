@@ -1,0 +1,14 @@
+{
+  "name": "InstaHighlight",
+  "version": "2.1",
+  "description": "Syntax highlighting for instapaper",
+  "content_scripts": [{
+    "js": ["brush/shCore.js", "brush/shBrushCpp.js", "highlight.js"],
+    "css": ["brush/shCore.css", "brush/shThemeDefault.css"],
+    "matches": ["http://*/*"]
+  }],
+  "permissions": ["http://*.instapaper.com/*", "http://instapaper.com/*"],
+  "browser_action": {
+    "default_title": ""
+  }
+}
